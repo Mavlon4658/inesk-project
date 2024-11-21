@@ -72,11 +72,12 @@ const menuOpen = document.querySelector('.header .bars');
 
 menuOpen.onclick = () => {
     menu.classList.add('active');
+    bodyHidden();
 }
 
 menuClose.onclick = () => {
     menu.classList.remove('active');
-    bodyHidden();
+    bodyVisible();
 }
 
 menuBg.onclick = () => {
