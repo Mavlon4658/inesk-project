@@ -557,20 +557,30 @@ button, input, select, textarea {
     &_left {
         padding: 50px 30px 42px 37px;
         background-color: #D8D9E0;
-        border-radius: 30px;
+        border-radius: 30px 0 0 30px;
+        position: relative;
 
         @include media(993) {
             padding: 40px 20px 76px 20px;
         }
+
+        &__bg {
+            position: absolute;
+            right: 0;
+            top: -0.5px;
+            height: calc(100% + 1px);
+            transform: translateX(52%);
+        }
     }
 
     &_right {
-        border-radius: 30px;
+        border-radius: 0 30px 30px 0;
         overflow: hidden;
 
         iframe {
             width: 100%;
             height: 100%;
+            border-color: transparent;
         }
 
         @include media(993) {
@@ -643,7 +653,7 @@ button, input, select, textarea {
     }
 
     .btn-gr {
-        width: 100%;
+        width: 331px;
     }
 }
 // contact
@@ -1048,3 +1058,72 @@ button, input, select, textarea {
     }
 }
 // Direction end
+
+// Delivery
+.delivery {
+    margin-bottom: 80px;
+
+    &__title {
+        text-align: center;
+        font-size: 40px;
+        line-height: 120%;
+        font-family: $font-getvoip;
+        text-transform: uppercase;
+        margin-bottom: 19px;
+    }
+
+    &__content {
+        position: relative;
+        height: 599px;
+
+        &_text {
+            position: absolute;
+            left: 50%;
+            top: -4px;
+            width: 570px;
+            height: 54px;
+            transform: translateX(-50%);
+            text-align: center;
+            background: #fff;
+            border-radius: 0 0 50px 50px;
+            font-size: 26px;
+            line-height: 107%;
+
+            &::before {
+                content: "";
+                width: 10px;
+                height: 10px;
+                background: transparent;
+                position: absolute;
+                right: -9px;
+                top: 4px;
+                border-radius: 10px 0 0 0;
+                box-shadow: -1px -1px #fff,
+                            -2px -2px #FFF,
+                            -3px -3px #FFF;
+            }
+
+            &::after {
+                content: "";
+                width: 10px;
+                height: 10px;
+                background: transparent;
+                position: absolute;
+                left: -9px;
+                top: 4px;
+                border-radius: 0 10px 0 0;
+                box-shadow: 1px -1px #fff,
+                            2px -2px #FFF,
+                            3px -3px #FFF;
+            }
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+    }
+}
+// Delivery end
