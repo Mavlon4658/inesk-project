@@ -351,7 +351,7 @@ button, input, select, textarea {
                 font-size: 16px;
                 line-height: 107%;
             }
-            
+
             .item-bg {
                 position: absolute;
                 z-index: -1;
@@ -532,6 +532,240 @@ button, input, select, textarea {
     }
 }
 // Skiils end
+
+// contact
+.contact {
+    margin-bottom: 40px;
+
+    &_in {
+        display: flex;
+        align-items: stretch;
+
+        @include media(993) {
+            flex-direction: column;
+        }
+    }
+
+    &_block {
+        width: calc(100% / 2);
+
+        @include media(993) {
+            width: 100%;
+        }
+    }
+
+    &_left {
+        padding: 50px 30px 42px 37px;
+        background-color: #D8D9E0;
+        border-radius: 30px;
+
+        @include media(993) {
+            padding: 40px 20px 76px 20px;
+        }
+    }
+
+    &_right {
+        border-radius: 30px;
+        overflow: hidden;
+
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+
+        @include media(993) {
+            height: 370px;
+        }
+    }
+
+    h3 {
+        font-family: $font-getvoip;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 48px;
+        color: #292929;
+        text-transform: uppercase;
+
+        @include media(993) {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 28.8px;
+            text-align: center;
+        }
+    }
+
+    h6 {
+        margin: 15px 0 20px 0;
+        font-family: $font-mont;
+        font-size: 26px;
+        font-weight: 400;
+        line-height: 28.04px;
+        color: #292929;
+
+        @include media(993) {
+            font-size: 22px;
+            line-height: 23px;
+            text-align: center;
+            margin: 15px 0 40px 0;
+        }
+    }
+
+    ul {
+        margin-bottom: 36px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+
+        span {
+            font-family: $font-mont;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 17.25px;
+            color: #838383;
+        }
+
+        a,
+        address {
+            font-family: $font-getvoip;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 19.41px;
+            color: #292929;
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            margin-top: 15px;
+
+            svg {
+                flex-shrink: 0;
+            }
+        }
+    }
+
+    .btn-gr {
+        width: 100%;
+    }
+}
+// contact
+
+// footer
+.footer {
+    margin-bottom: 77px;
+
+    @include media(993) {
+        margin-bottom: 50px;
+    }
+
+    &_in {
+        padding: 44px 34px 16px 37px;
+        border-radius: 20px;
+        background-color: #727272;
+
+        @include media(993) {
+            padding: 40px 0px 28px 0px;
+        }
+    }
+
+    &_logo {
+        max-width: 263px;
+    }
+
+    &_top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 37px;
+        border-bottom: 1px solid #D8D9E0;
+
+        @include media(993) {
+            flex-direction: column;
+            gap: 32px;
+            padding: 0 10px 40px;
+        }
+    }
+
+    .btn-red {
+
+        @include media(993) {
+            width: 230px;
+        }
+    }
+
+    &_bottom {
+        padding-top: 21px;
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+
+        @include media(993) {
+            flex-direction: column;
+            gap: 17px;
+            align-items: center;
+            padding: 21px 10px 0 10px;
+        }
+
+        .text_one {
+            max-width: 360px;
+
+            @include media(993) {
+                max-width: 370px;
+                text-align: center;
+            }
+        }
+
+        .text_two {
+            text-align: right;
+
+            @include media(993) {
+                max-width: 370px;
+                text-align: center;
+            }
+
+            .br_one {
+                display: flex;
+            }
+        }
+
+        span {
+            font-family: $font-mont;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 17.25px;
+            color: #D8D9E0;
+
+            .br_one {
+                display: none;
+            }
+        }
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+        gap: 47px;
+
+        @include media(993) {
+            flex-direction: column;
+            gap: 32px;
+        }
+
+        a {
+            font-family: $font-getvoip;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 19.41px;
+            color: #FFF;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+
+            svg {
+                flex-shrink: 0;
+            }
+        }
+    }
+}
+// footer
 
 // Contact form
 .contact-form {
