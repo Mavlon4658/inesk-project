@@ -16,6 +16,10 @@ button, input, select, textarea {
 .container {
     max-width: 1182px;
     margin: 0 auto;
+
+    @include media(1212) {
+        max-width: calc(100% - 30px);
+    }
 }
 
 .btn {
@@ -123,6 +127,15 @@ button, input, select, textarea {
         align-items: center;
         justify-content: space-between;
 
+        @include media(1112) {
+            width: calc(100% - 60px);
+        }
+
+        @include media(992) {
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
         &::before {
             content: "";
             position: absolute;
@@ -150,6 +163,16 @@ button, input, select, textarea {
         }
     }
 
+    &__logo {
+        flex-shrink: 0;
+
+        @include media(992) {
+            img {
+                height: 52px;
+            }
+        }
+    }
+
     .phone {
         display: flex;
         align-items: center;
@@ -157,6 +180,24 @@ button, input, select, textarea {
         font-size: 18px;
         color: #ED1C24;
         font-family: $font-getvoip;
+
+        @include media(992) {
+            display: none;
+        }
+
+        &-mb {
+            display: none;
+            align-items: center;
+            justify-content: center;
+            background: #CAD1D9;
+            width: 47px;
+            height: 47px;
+            border-radius: 5px;
+
+            @include media(992) {
+                display: flex;
+            }
+        }
     }
 
     .mail {
@@ -165,12 +206,26 @@ button, input, select, textarea {
         gap: 12px;
         font-size: 18px;
         font-family: $font-getvoip;
+
+        @include media(992) {
+            display: none;
+        }
     }
 
     &__right {
         display: flex;
         align-items: center;
         gap: 11px;
+
+        @include media(992) {
+            gap: 7px;
+        }
+    }
+
+    @include media(992) {
+        .btn-red {
+            display: none;
+        }
     }
 
     .bars {
@@ -201,11 +256,17 @@ button, input, select, textarea {
         width: 1402px;
         height: 100%;
         border-radius: 20px;
+        object-fit: cover;
+
+        @include media(1402) {
+            border-radius: 0;
+        }
     }
 
     &__container {
         height: 711px;
         padding-top: 137px;
+
     }
 
     &__title {
@@ -275,11 +336,27 @@ button, input, select, textarea {
         align-items: center;
         justify-content: space-between;
 
+        @include media(1193) {
+            max-width: calc(100% - 30px);
+        }
+
+        @include media(992) {
+            flex-direction: column;
+            background: #D8D9E0;
+            gap: 15px;
+            border-radius: 0 0 10px 10px;
+            padding: 24px 0 35px;
+        }
+
         &_wrap {
             max-width: 1402px;
             margin: 26px auto 89px;
             position: relative;
             z-index: 1;
+
+            @include media(992) {
+                margin: 0 auto 50px;
+            }
 
             .card-bg {
                 position: absolute;
@@ -290,41 +367,49 @@ button, input, select, textarea {
                 top: -26px;
                 transform: translateY(-100%);
 
+                @include media(992) {
+                    display: none;
+                }
+
                 &-1 {
                     left: 0;
 
-                    &::before {
-                        content: "";
-                        position: absolute;
-                        top: -20px;
-                        left: 0px;
-                        width: 20px;
-                        height: 20px;
-                        border-radius: 0 0 0 20px;
-                        background: transparent;
-                        box-shadow: -1px 1px #FFF,
-                                    -2px 2px #FFF,
-                                    -2px 2px #FFF,
-                                    -6px 6px #FFF;
+                    @include media(-1402) {
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: -20px;
+                            left: 0px;
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 0 0 0 20px;
+                            background: transparent;
+                            box-shadow: -1px 1px #FFF,
+                                        -2px 2px #FFF,
+                                        -2px 2px #FFF,
+                                        -6px 6px #FFF;
+                        }
                     }
                 }
 
                 &-2 {
                     right: 0;
 
-                    &::before {
-                        content: "";
-                        position: absolute;
-                        top: -20px;
-                        right: 0px;
-                        width: 20px;
-                        height: 20px;
-                        border-radius: 0 0 20px 0;
-                        background: transparent;
-                        box-shadow: 1px 1px #FFF,
-                                    2px 2px #FFF,
-                                    2px 2px #FFF,
-                                    6px 6px #FFF;
+                    @include media(-1402) {
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: -20px;
+                            right: 0px;
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 0 0 20px 0;
+                            background: transparent;
+                            box-shadow: 1px 1px #FFF,
+                                        2px 2px #FFF,
+                                        2px 2px #FFF,
+                                        6px 6px #FFF;
+                        }
                     }
                 }
             }
@@ -338,18 +423,32 @@ button, input, select, textarea {
             position: relative;
             z-index: 1;
 
+            @include media(992) {
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+                gap: 9px;
+            }
+
             &:last-child {
                 width: 240px;
             }
 
             &:first-child, &:last-child {
                 position: relative;
-                transform: translateY(-42px);
+                
+                @include media(-992) {
+                    transform: translateY(-42px);
+                }
             }
 
             p {
                 font-size: 16px;
                 line-height: 107%;
+
+                @include media(992) {
+                    font-size: 18px;
+                }
             }
 
             .item-bg {
@@ -359,6 +458,10 @@ button, input, select, textarea {
                 height: 44px;
                 width: 100%;
                 top: -28px;
+
+                @include media(992) {
+                    display: none;
+                }
             }
 
             &:nth-child(1) {
