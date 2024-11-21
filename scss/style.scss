@@ -78,7 +78,7 @@ button, input, select, textarea {
     }
 }
 
-// Header 
+// Header
 .header {
     position: absolute;
     top: 0;
@@ -324,7 +324,7 @@ button, input, select, textarea {
                 font-size: 16px;
                 line-height: 107%;
             }
-            
+
             .item-bg {
                 position: absolute;
                 z-index: -1;
@@ -499,3 +499,123 @@ button, input, select, textarea {
     }
 }
 // Skiils end
+
+
+// footer
+.footer {
+    margin-bottom: 77px;
+
+    @include media(993) {
+        margin-bottom: 50px;
+    }
+
+    &_in {
+        padding: 44px 34px 16px 37px;
+        border-radius: 20px;
+        background-color: #727272;
+
+        @include media(993) {
+            padding: 40px 0px 28px 0px;
+        }
+    }
+
+    &_logo {
+        max-width: 263px;
+    }
+
+    &_top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 37px;
+        border-bottom: 1px solid #D8D9E0;
+
+        @include media(993) {
+            flex-direction: column;
+            gap: 32px;
+            padding: 0 10px 40px;
+        }
+    }
+
+    .btn-red {
+
+        @include media(993) {
+            width: 230px;
+        }
+    }
+
+    &_bottom {
+        padding-top: 21px;
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+
+        @include media(993) {
+            flex-direction: column;
+            gap: 17px;
+            align-items: center;
+            padding: 21px 10px 0 10px;
+        }
+
+        .text_one {
+            max-width: 360px;
+
+            @include media(993) {
+                max-width: 370px;
+                text-align: center;
+            }
+        }
+
+        .text_two {
+            text-align: right;
+
+            @include media(993) {
+                max-width: 370px;
+                text-align: center;
+            }
+
+            .br_one {
+                display: flex;
+            }
+        }
+
+        span {
+            font-family: $font-mont;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 17.25px;
+            color: #D8D9E0;
+
+            .br_one {
+                display: none;
+            }
+        }
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+        gap: 47px;
+
+        @include media(993) {
+            flex-direction: column;
+            gap: 32px;
+        }
+
+        a {
+            font-family: $font-getvoip;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 19.41px;
+            color: #FFF;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+
+            svg {
+                flex-shrink: 0;
+            }
+        }
+    }
+}
+// footer
