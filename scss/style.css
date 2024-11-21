@@ -915,6 +915,24 @@ textarea {
 .contact-form {
   margin-bottom: 100px;
 }
+@media screen and (max-width: 993px) {
+  .contact-form {
+    margin-bottom: 30px;
+    padding-bottom: 590px;
+  }
+}
+.contact-form .media-title {
+  display: none;
+}
+@media screen and (max-width: 993px) {
+  .contact-form .media-title {
+    display: block;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 23.72px;
+    text-align: center;
+  }
+}
 .contact-form__container {
   background: #d8d9e0;
   position: relative;
@@ -924,6 +942,12 @@ textarea {
   display: flex;
   align-items: flex-start;
   gap: 55px;
+}
+@media screen and (max-width: 993px) {
+  .contact-form__container {
+    flex-direction: column;
+    height: 595px;
+  }
 }
 .contact-form .links {
   position: absolute;
@@ -958,6 +982,11 @@ textarea {
   border-radius: 19px 0 0 0;
   box-shadow: -1px -1px #fff, -2px -2px #fff, -3px -3px #fff, -6px -6px #fff;
 }
+@media screen and (max-width: 993px) {
+  .contact-form .links {
+    display: none;
+  }
+}
 .contact-form .links a {
   display: flex;
   align-items: center;
@@ -972,11 +1001,22 @@ textarea {
 .contact-form__left {
   padding-top: 83px;
 }
+@media screen and (max-width: 993px) {
+  .contact-form__left {
+    padding-top: 17px;
+  }
+}
 .contact-form__left .title {
   font-size: 40px;
   line-height: 120%;
   font-family: "GetVoIP Grotesque", sans-serif;
   margin-bottom: 12px;
+}
+@media screen and (max-width: 992px) {
+  .contact-form__left .title {
+    font-size: 24px;
+    line-height: 28px;
+  }
 }
 .contact-form__left .subtitle {
   font-size: 40px;
@@ -984,6 +1024,12 @@ textarea {
   font-family: "GetVoIP Grotesque", sans-serif;
   color: #ed1c24;
   margin-bottom: 16px;
+}
+@media screen and (max-width: 992px) {
+  .contact-form__left .subtitle {
+    font-size: 24px;
+    line-height: 28px;
+  }
 }
 .contact-form__left p {
   font-size: 16px;
@@ -994,6 +1040,11 @@ textarea {
   font-size: 22px;
   line-height: 107%;
 }
+@media screen and (max-width: 993px) {
+  .contact-form__left h4 {
+    display: none;
+  }
+}
 .contact-form__left .alert {
   position: absolute;
   right: 49px;
@@ -1002,6 +1053,15 @@ textarea {
   text-align: center;
   z-index: 1;
   padding-top: 56px;
+}
+@media screen and (max-width: 993px) {
+  .contact-form__left .alert {
+    bottom: 60px;
+    right: 15px;
+  }
+  .contact-form__left .alert h4 {
+    display: block;
+  }
 }
 .contact-form__left .alert img {
   position: absolute;
@@ -1034,6 +1094,11 @@ textarea {
   max-width: 331px;
   gap: 22px;
 }
+@media screen and (max-width: 993px) {
+  .contact-form__right {
+    margin-top: 315px;
+  }
+}
 .contact-form__right p {
   font-size: 15px;
   line-height: 107%;
@@ -1044,6 +1109,15 @@ textarea {
   display: flex;
   align-items: center;
   gap: 26px;
+}
+@media screen and (max-width: 993px) {
+  .contact-form__right .network {
+    justify-content: center;
+  }
+  .contact-form__right .network img {
+    width: 88px;
+    height: 88px;
+  }
 }
 
 .direction {
