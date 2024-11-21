@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+@font-face {
+    font-family: 'GetVoIP Grotesque';
+    src: local('GetVoIP Grotesque'), local('GetVoIPGrotesque'), url('../fonts/getvoip/Getvoipgrotesque.woff2') format('woff2'), url('../fonts/getvoip/Getvoipgrotesque.woff') format('woff'), url('../fonts/getvoip/Getvoipgrotesque.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GetVoIP Grotesque';
+    src: local('GetVoIP Grotesque Italic'), local('GetVoIPGrotesque-Italic'), url('../fonts/getvoip/Getvoipgrotesqueitalic.woff2') format('woff2'), url('../fonts/getvoip/Getvoipgrotesqueitalic.woff') format('woff'), url('../fonts/getvoip/Getvoipgrotesqueitalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Mont';
+    src: url('../fonts/mont/Mont-Regular.eot');
+    src: local('Mont Regular'), local('Mont-Regular'),
+        url('../fonts/mont/Mont-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/mont/Mont-Regular.woff2') format('woff2'),
+        url('../fonts/mont/Mont-Regular.woff') format('woff'),
+        url('../fonts/mont/Mont-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mont';
+    src: url('../fonts/mont/Mont-SemiBold.eot');
+    src: local('Mont SemiBold'), local('Mont-SemiBold'),
+        url('../fonts/mont/Mont-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/mont/Mont-SemiBold.woff2') format('woff2'),
+        url('../fonts/mont/Mont-SemiBold.woff') format('woff'),
+        url('../fonts/mont/Mont-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+// Fonts
+$font-getvoip: "GetVoIP Grotesque", sans-serif;
+$font-manrope: "Manrope", sans-serif;
+$font-mont: "Mont", sans-serif;
+// Fonts end
+
+// Colors
+
+// Colors end
+
+
+@mixin media($value) {
+    @if ($value < 0) {
+        @media screen and (min-width: calc($value * (-1)) + 'px') {
+            @content;
+        }
+
+    } @else {
+        @media screen and (max-width: $value + 'px') {
+            @content;
+        }
+    }
+}
