@@ -36,6 +36,7 @@ modal_one_btn.forEach(btn => {
     btn.addEventListener('click', () => {
         modal_one.classList.add('active');
         modal_bg.classList.add('active');
+        bodyHidden();
     });
 });
 
@@ -43,6 +44,7 @@ modal_two_btn.forEach(btn => {
     btn.addEventListener('click', () => {
         modal_two.classList.add('active');
         modal_bg.classList.add('active');
+        bodyHidden();
     });
 });
 
@@ -50,6 +52,7 @@ modal_bg.addEventListener('click', () => {
     modal_one.classList.remove('active');
     modal_two.classList.remove('active');
     modal_bg.classList.remove('active');
+    bodyVisible();
 })
 
 const skillsSwp = new Swiper('.skills .swiper', {

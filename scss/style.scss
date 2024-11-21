@@ -113,28 +113,6 @@ textarea {
   }
 }
 
-// Header
-.header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 2;
-
-  &__container {
-    max-width: 1052px;
-    padding: 18px 18px 13px;
-    background: #fff;
-    border-radius: 0 0 50px 50px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    @include media(1112) {
-      width: calc(100% - 60px);
-    }
-
 // modal_bg
 .modal_bg {
     display: none;
@@ -397,120 +375,135 @@ textarea {
 }
 // modal_two
 
-// Header
+// Header 
 .header {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 2;
-  
-    @include media(992) {
-      padding-right: 15px;
-      padding-left: 15px;
-    }
 
-    &::before {
-      content: '';
-      position: absolute;
-      top: 23px;
-      left: 0px;
-      transform: translateX(-100%);
-      width: 9px;
-      height: 9px;
-      border-radius: 2px 9px 2px 0;
-      box-shadow: 3px -3px #fff;
-      background: transparent;
-    }
-
-    &::after {
-      content: '';
-      position: absolute;
-      top: 23px;
-      right: 0px;
-      transform: translateX(100%);
-      width: 9px;
-      height: 9px;
-      border-radius: 9px 2px 0 2px;
-      box-shadow: -3px -3px #fff;
-      background: transparent;
-    }
-  }
-
-  &__logo {
-    flex-shrink: 0;
-
-    @include media(992) {
-      img {
-        height: 52px;
-      }
-    }
-  }
-
-  .phone {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    font-size: 18px;
-    color: #ed1c24;
-    font-family: $font-getvoip;
-
-    @include media(992) {
-      display: none;
-    }
-
-    &-mb {
-      display: none;
-      align-items: center;
-      justify-content: center;
-      background: #cad1d9;
-      width: 47px;
-      height: 47px;
-      border-radius: 5px;
-
-      @include media(992) {
+    &__container {
+        max-width: 1052px;
+        padding: 18px 18px 13px;
+        background: #FFF;
+        border-radius: 0 0 50px 50px;
+        position: relative;
         display: flex;
-      }
-    }
-  }
+        align-items: center;
+        justify-content: space-between;
 
-  .mail {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    font-size: 18px;
-    font-family: $font-getvoip;
+        @include media(1112) {
+            width: calc(100% - 60px);
+        }
+
+        @include media(992) {
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 23px;
+            left: 0px;
+            transform: translateX(-100%);
+            width: 9px;
+            height: 9px;
+            border-radius: 2px 9px 2px 0;
+            box-shadow: 3px -3px #FFF;
+            background: transparent;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 23px;
+            right: 0px;
+            transform: translateX(100%);
+            width: 9px;
+            height: 9px;
+            border-radius: 9px 2px 0 2px;
+            box-shadow: -3px -3px #FFF;
+            background: transparent;
+        }
+    }
+
+    &__logo {
+        flex-shrink: 0;
+
+        @include media(992) {
+            img {
+                height: 52px;
+            }
+        }
+    }
+
+    .phone {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-size: 18px;
+        color: #ED1C24;
+        font-family: $font-getvoip;
+
+        @include media(992) {
+            display: none;
+        }
+
+        &-mb {
+            display: none;
+            align-items: center;
+            justify-content: center;
+            background: #CAD1D9;
+            width: 47px;
+            height: 47px;
+            border-radius: 5px;
+
+            @include media(992) {
+                display: flex;
+            }
+        }
+    }
+
+    .mail {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-size: 18px;
+        font-family: $font-getvoip;
+
+        @include media(992) {
+            display: none;
+        }
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+
+        @include media(992) {
+            gap: 7px;
+        }
+    }
 
     @include media(992) {
-      display: none;
+        .btn-red {
+            display: none;
+        }
     }
-  }
 
-  &__right {
-    display: flex;
-    align-items: center;
-    gap: 11px;
-
-    @include media(992) {
-      gap: 7px;
+    .bars {
+        width: 47px;
+        height: 47px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #CAD1D9;
+        border-radius: 5px 5px 30px 5px;
     }
-  }
 
-  @include media(992) {
-    .btn-red {
-      display: none;
-    }
-  }
-
-  .bars {
-    width: 47px;
-    height: 47px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #cad1d9;
-    border-radius: 5px 5px 30px 5px;
-  }
 }
 // Header end
 
