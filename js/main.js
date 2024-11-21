@@ -1,3 +1,11 @@
+const bodyHidden = () => {
+    document.querySelector('body').style.overflow = "hidden";
+}
+
+const bodyVisible = () => {
+    document.querySelector('body').style.overflow = "visible";
+}
+
 const directionSwp = new Swiper('.direction .swiper', {
     slidesPerView: 'auto',
     centeredSlides: true,
@@ -17,7 +25,6 @@ document.querySelectorAll('.direction .swiper-slide .main-img').forEach((el, elI
         directionSwp.slideTo(elID);
     }
 })
-
 
 let modal_one_btn = document.querySelectorAll('.modal_one_btn');
 let modal_two_btn = document.querySelectorAll('.modal_two_btn');
@@ -44,3 +51,32 @@ modal_bg.addEventListener('click', () => {
     modal_two.classList.remove('active');
     modal_bg.classList.remove('active');
 })
+
+const skillsSwp = new Swiper('.skills .swiper', {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    loop: true,
+    navigation: {
+        nextEl: '.skills .swp_btn__next',
+        prevEl: '.skills .swp_btn__prev',
+    }
+})
+
+const menu = document.querySelector('.menu-modal');
+const menuClose = document.querySelector('.menu-modal__close');
+const menuBg = document.querySelector('.menu-modal__bg');
+const menuOpen = document.querySelector('.header .bars');
+
+menuOpen.onclick = () => {
+    menu.classList.add('active');
+}
+
+menuClose.onclick = () => {
+    menu.classList.remove('active');
+    bodyHidden();
+}
+
+menuBg.onclick = () => {
+    menu.classList.remove('active');
+    bodyVisible();
+}
