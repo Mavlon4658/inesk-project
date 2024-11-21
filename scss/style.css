@@ -98,7 +98,10 @@ body {
   color: #292929;
 }
 
-button, input, select, textarea {
+button,
+input,
+select,
+textarea {
   font-family: "Mont", sans-serif;
   font-weight: 400;
   color: #292929;
@@ -115,7 +118,7 @@ button, input, select, textarea {
 }
 
 .btn-red {
-  background: #ED1C24;
+  background: #ed1c24;
   color: #fff;
   padding: 14px 25px 12px 26px;
   border-radius: 5px;
@@ -130,7 +133,7 @@ button, input, select, textarea {
   font-size: 18px;
   line-height: 130%;
   font-weight: 600;
-  color: #FFF;
+  color: #fff;
 }
 .btn-gr::before {
   content: "";
@@ -153,14 +156,14 @@ button, input, select, textarea {
   width: 100%;
   height: 100%;
   border-radius: 10px;
-  background: linear-gradient(to right, #ED1C24, #D34D52, #ED1C24);
-  box-shadow: 0 4px 2px #B02A2F;
+  background: linear-gradient(to right, #ed1c24, #d34d52, #ed1c24);
+  box-shadow: 0 4px 2px #b02a2f;
 }
 
 .swp_btn button {
   width: 59px;
   height: 43px;
-  background: #ED1C24;
+  background: #ed1c24;
   border-radius: 5px;
   display: flex;
   align-items: center;
@@ -181,7 +184,7 @@ button, input, select, textarea {
 }
 .form_inp input {
   padding: 22px 21px;
-  border: 1px solid #B9B9B9;
+  border: 1px solid #b9b9b9;
   border-radius: 10px;
   width: 100%;
   font-size: 16px;
@@ -204,7 +207,7 @@ button, input, select, textarea {
 .header__container {
   max-width: 1052px;
   padding: 18px 18px 13px;
-  background: #FFF;
+  background: #fff;
   border-radius: 0 0 50px 50px;
   position: relative;
   display: flex;
@@ -231,7 +234,7 @@ button, input, select, textarea {
   width: 9px;
   height: 9px;
   border-radius: 2px 9px 2px 0;
-  box-shadow: 3px -3px #FFF;
+  box-shadow: 3px -3px #fff;
   background: transparent;
 }
 .header__container::after {
@@ -243,7 +246,7 @@ button, input, select, textarea {
   width: 9px;
   height: 9px;
   border-radius: 9px 2px 0 2px;
-  box-shadow: -3px -3px #FFF;
+  box-shadow: -3px -3px #fff;
   background: transparent;
 }
 .header__logo {
@@ -259,7 +262,7 @@ button, input, select, textarea {
   align-items: center;
   gap: 12px;
   font-size: 18px;
-  color: #ED1C24;
+  color: #ed1c24;
   font-family: "GetVoIP Grotesque", sans-serif;
 }
 @media screen and (max-width: 992px) {
@@ -271,7 +274,7 @@ button, input, select, textarea {
   display: none;
   align-items: center;
   justify-content: center;
-  background: #CAD1D9;
+  background: #cad1d9;
   width: 47px;
   height: 47px;
   border-radius: 5px;
@@ -314,7 +317,7 @@ button, input, select, textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #CAD1D9;
+  background: #cad1d9;
   border-radius: 5px 5px 30px 5px;
 }
 
@@ -359,7 +362,7 @@ button, input, select, textarea {
   position: absolute;
   top: 97px;
   left: 147px;
-  background: #F9FAFA;
+  background: #f9fafa;
   border-radius: 100%;
   filter: blur(10px);
 }
@@ -370,7 +373,7 @@ button, input, select, textarea {
   left: 91px;
   width: 330px;
   height: 14px;
-  background: #F9FAFA;
+  background: #f9fafa;
   border-radius: 100%;
   filter: blur(10px);
 }
@@ -381,11 +384,11 @@ button, input, select, textarea {
   margin-bottom: 42px;
 }
 .home__description span {
-  color: #ED1C24;
+  color: #ed1c24;
   display: inline;
 }
 .home__bottom {
-  background: #FFF;
+  background: #fff;
   border-radius: 20px;
   max-width: 797px;
   padding: 8px 10px 13px;
@@ -412,7 +415,7 @@ button, input, select, textarea {
 @media screen and (max-width: 992px) {
   .home__card {
     flex-direction: column;
-    background: #D8D9E0;
+    background: #d8d9e0;
     gap: 15px;
     border-radius: 0 0 10px 10px;
     padding: 24px 0 35px;
@@ -433,7 +436,7 @@ button, input, select, textarea {
   position: absolute;
   width: 160px;
   height: 44px;
-  background: #FFF;
+  background: #fff;
   z-index: -1;
   top: -26px;
   transform: translateY(-100%);
@@ -456,7 +459,7 @@ button, input, select, textarea {
     height: 20px;
     border-radius: 0 0 0 20px;
     background: transparent;
-    box-shadow: -1px 1px #FFF, -2px 2px #FFF, -2px 2px #FFF, -6px 6px #FFF;
+    box-shadow: -1px 1px #fff, -2px 2px #fff, -2px 2px #fff, -6px 6px #fff;
   }
 }
 .home__card_wrap .card-bg-2 {
@@ -472,7 +475,7 @@ button, input, select, textarea {
     height: 20px;
     border-radius: 0 0 20px 0;
     background: transparent;
-    box-shadow: 1px 1px #FFF, 2px 2px #FFF, 2px 2px #FFF, 6px 6px #FFF;
+    box-shadow: 1px 1px #fff, 2px 2px #fff, 2px 2px #fff, 6px 6px #fff;
   }
 }
 .home__card_item {
@@ -514,7 +517,7 @@ button, input, select, textarea {
 .home__card_item .item-bg {
   position: absolute;
   z-index: -1;
-  background: #FFF;
+  background: #fff;
   height: 44px;
   width: 100%;
   top: -28px;
@@ -537,7 +540,7 @@ button, input, select, textarea {
   height: 10px;
   background: transparent;
   border-radius: 0 0 0 10px;
-  box-shadow: -1px 1px #FFF, -2px 2px #FFF, -2px 2px #FFF, -6px 6px #FFF;
+  box-shadow: -1px 1px #fff, -2px 2px #fff, -2px 2px #fff, -6px 6px #fff;
 }
 .home__card_item:nth-child(4) .item-bg {
   left: -34px;
@@ -552,7 +555,7 @@ button, input, select, textarea {
   height: 10px;
   background: transparent;
   border-radius: 0 0 10px 0;
-  box-shadow: 1px 1px #FFF, 2px 2px #FFF, 2px 2px #FFF, 6px 6px #FFF;
+  box-shadow: 1px 1px #fff, 2px 2px #fff, 2px 2px #fff, 6px 6px #fff;
 }
 
 .skills__title {
@@ -604,13 +607,13 @@ button, input, select, textarea {
   bottom: -19px;
   background: transparent;
   border-radius: 0 19px 0 0;
-  box-shadow: 1px -1px #FFF, 2px -2px #FFF, 3px -3px #FFF, 6px -6px #FFF;
+  box-shadow: 1px -1px #fff, 2px -2px #fff, 3px -3px #fff, 6px -6px #fff;
 }
 .skills__card_img {
   width: 570px;
   height: 413px;
   flex-shrink: 0;
-  background: #D8D9E0;
+  background: #d8d9e0;
   margin-top: 22px;
   border-radius: 20px;
   overflow: hidden;
@@ -629,7 +632,7 @@ button, input, select, textarea {
   padding-top: 12px;
 }
 .skills__card_content h3 {
-  color: #ED1C24;
+  color: #ed1c24;
   font-size: 22px;
   font-weight: 600;
   line-height: 107%;
@@ -641,7 +644,7 @@ button, input, select, textarea {
   margin-bottom: 20px;
 }
 .skills__card_content ul {
-  background: #D8D9E0;
+  background: #d8d9e0;
   border-radius: 10px;
   padding: 20px 28px 16px;
   margin-bottom: 21px;
@@ -655,7 +658,7 @@ button, input, select, textarea {
   line-height: 107%;
 }
 .skills__card_content ul li::marker {
-  color: #ED1C24;
+  color: #ed1c24;
   font-size: 20px;
 }
 
@@ -681,13 +684,14 @@ button, input, select, textarea {
 }
 .contact_left {
   padding: 50px 30px 42px 37px;
-  background-color: #D8D9E0;
+  background-color: #d8d9e0;
   border-radius: 30px 0 0 30px;
   position: relative;
 }
 @media screen and (max-width: 993px) {
   .contact_left {
     padding: 40px 20px 76px 20px;
+    border-radius: 30px;
   }
 }
 .contact_left__bg {
@@ -696,6 +700,17 @@ button, input, select, textarea {
   top: -0.5px;
   height: calc(100% + 1px);
   transform: translateX(52%);
+}
+@media screen and (max-width: 992px) {
+  .contact_left__bg {
+    position: absolute;
+    right: unset;
+    left: 0;
+    top: 261.5px;
+    width: 100%;
+    height: calc(100% + 1px);
+    transform: translateX(0) rotate(90deg);
+  }
 }
 .contact_right {
   border-radius: 0 30px 30px 0;
@@ -708,6 +723,7 @@ button, input, select, textarea {
 }
 @media screen and (max-width: 993px) {
   .contact_right {
+    border-radius: 30px;
     height: 370px;
   }
 }
@@ -749,6 +765,11 @@ button, input, select, textarea {
   flex-direction: column;
   gap: 25px;
 }
+@media screen and (max-width: 992px) {
+  .contact ul {
+    margin-bottom: 25px;
+  }
+}
 .contact ul span {
   font-family: "Mont", sans-serif;
   font-size: 16px;
@@ -774,6 +795,11 @@ button, input, select, textarea {
 }
 .contact .btn-gr {
   width: 331px;
+}
+@media screen and (max-width: 992px) {
+  .contact .btn-gr {
+    width: 100%;
+  }
 }
 
 .footer {
@@ -802,7 +828,7 @@ button, input, select, textarea {
   align-items: center;
   justify-content: space-between;
   padding-bottom: 37px;
-  border-bottom: 1px solid #D8D9E0;
+  border-bottom: 1px solid #d8d9e0;
 }
 @media screen and (max-width: 993px) {
   .footer_top {
@@ -856,7 +882,7 @@ button, input, select, textarea {
   font-size: 16px;
   font-weight: 600;
   line-height: 17.25px;
-  color: #D8D9E0;
+  color: #d8d9e0;
 }
 .footer_bottom span .br_one {
   display: none;
@@ -877,7 +903,7 @@ button, input, select, textarea {
   font-size: 18px;
   font-weight: 700;
   line-height: 19.41px;
-  color: #FFF;
+  color: #fff;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -890,7 +916,7 @@ button, input, select, textarea {
   margin-bottom: 100px;
 }
 .contact-form__container {
-  background: #D8D9E0;
+  background: #d8d9e0;
   position: relative;
   z-index: 1;
   padding: 33px 39px 42px;
@@ -903,7 +929,7 @@ button, input, select, textarea {
   position: absolute;
   top: 0;
   left: 0;
-  background: #FFF;
+  background: #fff;
   display: flex;
   align-items: center;
   gap: 22px;
@@ -919,7 +945,7 @@ button, input, select, textarea {
   width: 19px;
   height: 19px;
   border-radius: 19px 0 0 0;
-  box-shadow: -1px -1px #fff, -2px -2px #FFF, -3px -3px #FFF, -6px -6px #FFF;
+  box-shadow: -1px -1px #fff, -2px -2px #fff, -3px -3px #fff, -6px -6px #fff;
 }
 .contact-form .links::after {
   content: "";
@@ -930,7 +956,7 @@ button, input, select, textarea {
   width: 19px;
   height: 19px;
   border-radius: 19px 0 0 0;
-  box-shadow: -1px -1px #fff, -2px -2px #FFF, -3px -3px #FFF, -6px -6px #FFF;
+  box-shadow: -1px -1px #fff, -2px -2px #fff, -3px -3px #fff, -6px -6px #fff;
 }
 .contact-form .links a {
   display: flex;
@@ -941,7 +967,7 @@ button, input, select, textarea {
   font-family: "GetVoIP Grotesque", sans-serif;
 }
 .contact-form .links li:first-child {
-  color: #ED1C24;
+  color: #ed1c24;
 }
 .contact-form__left {
   padding-top: 83px;
@@ -956,7 +982,7 @@ button, input, select, textarea {
   font-size: 40px;
   line-height: 120%;
   font-family: "GetVoIP Grotesque", sans-serif;
-  color: #ED1C24;
+  color: #ed1c24;
   margin-bottom: 16px;
 }
 .contact-form__left p {
@@ -988,7 +1014,7 @@ button, input, select, textarea {
   font-size: 20px;
   line-height: 13px;
   font-family: "GetVoIP Grotesque", sans-serif;
-  color: #ED1C24;
+  color: #ed1c24;
   margin-bottom: 16px;
 }
 .contact-form__left .alert h5 {
@@ -1031,22 +1057,46 @@ button, input, select, textarea {
   font-family: "GetVoIP Grotesque", sans-serif;
   text-align: center;
 }
+@media screen and (max-width: 993px) {
+  .direction__title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
 .direction__description {
   font-size: 26px;
   line-height: 107%;
   max-width: 803px;
   margin: 0 auto 50px;
 }
+@media screen and (max-width: 993px) {
+  .direction__description {
+    text-align: center;
+    font-size: 22px;
+    line-height: 23px;
+    margin-bottom: 30px;
+  }
+}
 .direction__content {
   display: flex;
   align-items: flex-start;
   gap: 32px;
+}
+@media screen and (max-width: 993px) {
+  .direction__content {
+    flex-direction: column;
+  }
 }
 .direction__content_swp {
   width: calc(100% - 410px);
   padding-left: 151px;
   overflow: hidden;
   border-radius: 10px;
+}
+@media screen and (max-width: 993px) {
+  .direction__content_swp {
+    width: 100%;
+  }
 }
 .direction__content_swp .swiper {
   width: 307px;
@@ -1086,31 +1136,54 @@ button, input, select, textarea {
 .direction__content_right {
   width: 378px;
 }
+@media screen and (max-width: 993px) {
+  .direction__content_right {
+    width: 100%;
+  }
+}
 .direction__content_right h3 {
   font-size: 22px;
   font-weight: 600;
   line-height: 107%;
   margin-bottom: 16px;
-  color: #ED1C24;
+  color: #ed1c24;
+}
+@media screen and (max-width: 993px) {
+  .direction__content_right h3 {
+    text-align: center;
+  }
 }
 .direction__content_right p {
   font-size: 16px;
   line-height: 107%;
   margin-bottom: 21px;
 }
+@media screen and (max-width: 993px) {
+  .direction__content_right p {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+}
 .direction__content_right ul {
-  background: #D8D9E0;
+  background: #d8d9e0;
   padding: 20px 12px 19px 24px;
   border-radius: 10px;
   list-style-type: disc;
   margin-bottom: 32px;
+}
+@media screen and (max-width: 993px) {
+  .direction__content_right ul {
+    padding: 16px 3px 15px 30px;
+    background: #fff;
+    margin-bottom: 24px;
+  }
 }
 .direction__content_right ul li {
   font-size: 16px;
   line-height: 107%;
 }
 .direction__content_right ul li::marker {
-  color: #ED1C24;
+  color: #ed1c24;
   font-size: 20px;
 }
 .direction__content_right .btn-gr {
@@ -1121,9 +1194,25 @@ button, input, select, textarea {
   line-height: 600;
   line-height: 130%;
 }
+@media screen and (max-width: 993px) {
+  .direction__content_right .btn-gr {
+    padding: 33px 10px;
+  }
+}
+@media screen and (max-width: 993px) {
+  .direction {
+    background: #d8d9e0;
+    padding: 50px 0 35px 0;
+  }
+}
 
 .delivery {
   margin-bottom: 80px;
+}
+@media screen and (max-width: 992px) {
+  .delivery {
+    margin-bottom: 50px;
+  }
 }
 .delivery__title {
   text-align: center;
@@ -1133,9 +1222,22 @@ button, input, select, textarea {
   text-transform: uppercase;
   margin-bottom: 19px;
 }
+@media screen and (max-width: 992px) {
+  .delivery__title {
+    font-size: 24px;
+    line-height: 24px;
+    max-width: 305px;
+    margin: 0 auto;
+  }
+}
 .delivery__content {
   position: relative;
   height: 599px;
+}
+@media screen and (max-width: 992px) {
+  .delivery__content {
+    height: unset;
+  }
 }
 .delivery__content_text {
   position: absolute;
@@ -1159,7 +1261,7 @@ button, input, select, textarea {
   right: -9px;
   top: 4px;
   border-radius: 10px 0 0 0;
-  box-shadow: -1px -1px #fff, -2px -2px #FFF, -3px -3px #FFF;
+  box-shadow: -1px -1px #fff, -2px -2px #fff, -3px -3px #fff;
 }
 .delivery__content_text::after {
   content: "";
@@ -1170,7 +1272,24 @@ button, input, select, textarea {
   left: -9px;
   top: 4px;
   border-radius: 0 10px 0 0;
-  box-shadow: 1px -1px #fff, 2px -2px #FFF, 3px -3px #FFF;
+  box-shadow: 1px -1px #fff, 2px -2px #fff, 3px -3px #fff;
+}
+@media screen and (max-width: 992px) {
+  .delivery__content_text {
+    position: unset;
+    transform: none;
+    width: -moz-fit-content;
+    width: fit-content;
+    text-align: center;
+    margin: 15px auto 40px auto;
+    font-size: 22px;
+    font-weight: 600;
+    height: unset;
+    line-height: 23.72px;
+  }
+  .delivery__content_text::before, .delivery__content_text::after {
+    display: none;
+  }
 }
 .delivery__content img {
   width: 100%;
@@ -1178,4 +1297,10 @@ button, input, select, textarea {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 20px;
+}
+@media screen and (max-width: 992px) {
+  .delivery__content img {
+    height: 224px;
+    border-radius: 10px;
+  }
 }/*# sourceMappingURL=style.css.map */
