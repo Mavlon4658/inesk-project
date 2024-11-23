@@ -30,15 +30,23 @@ let modal_one_btn = document.querySelectorAll('.modal_one_btn');
 let modal_two_btn = document.querySelectorAll('.modal_two_btn');
 let modal_one = document.querySelector('.modal_one');
 let modal_two = document.querySelector('.modal_two');
+let modal_twoClose = document.querySelector('.modal_two__close');
 let modal_bg = document.querySelector('.modal_bg');
 
 modal_one_btn.forEach(btn => {
-    btn.addEventListener('click', () => {
+    btn.addEventListener('click', (e) => {
+        e.preventDefault();
         modal_one.classList.add('active');
         modal_bg.classList.add('active');
         bodyHidden();
     });
 });
+
+modal_twoClose.onclick = () => {
+    modal_two.classList.remove('active');
+    modal_bg.classList.remove('active');
+    bodyVisible();
+}
 
 modal_two_btn.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -55,15 +63,27 @@ modal_bg.addEventListener('click', () => {
     bodyVisible();
 })
 
-const skillsSwp = new Swiper('.skills .swiper', {
+const skillsContent = new Swiper('.skills__card_content .swiper', {
+    slidesPerView: 1,
+    effect: 'fade',
+    loop: true,
+    allowTouchMove: false,
+})
+
+const skillsSwp = new Swiper('.skills .skills__card_img .swiper', {
     slidesPerView: 1,
     spaceBetween: 0,
     loop: true,
+    effect: 'fade',
     navigation: {
         nextEl: '.skills .swp_btn__next',
         prevEl: '.skills .swp_btn__prev',
-    }
+    },
+    thumbs: {
+        swiper: skillsContent,
+    },
 })
+
 
 const menu = document.querySelector('.menu-modal');
 const menuClose = document.querySelector('.menu-modal__close');
