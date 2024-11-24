@@ -6,24 +6,25 @@ const bodyVisible = () => {
     document.querySelector('body').style.overflow = "visible";
 }
 
-const directionSwp = new Swiper('.direction .swiper', {
-    slidesPerView: 'auto',
-    centeredSlides: true,
-    spaceBetween: 15,
-    initialSlide: 1,
-    onSlideChangeEnd:function(e){
-        directionSwp.update(true);
-    },
-    navigation: {
-        nextEl: '.direction .swiper .swp_btn__next',
-        prevEl: '.direction .swiper .swp_btn__prev',
-    }
+const directionContentSwp = new Swiper('.direction .direction__content_right .swiper', {
+    slidesPerView: 1,
+    allowTouchMove: false,
+    effect: 'fade',
 })
 
-document.querySelectorAll('.direction .swiper-slide .main-img').forEach((el, elID) => {
-    el.onclick = () => {
-        directionSwp.slideTo(elID);
-    }
+const directionSwp = new Swiper('.direction .direction__content_swp .swiper', {
+    effect: "coverflow",
+    centeredSlides: true,
+    slidesPerView: "auto",
+    spaceBetween: -10,
+    loop: true,
+    navigation: {
+        nextEl: '.direction .swp_btn__next',
+        prevEl: '.direction .swp_btn__prev',
+    },
+    thumbs: {
+        swiper: directionContentSwp,
+    },
 })
 
 let modal_one_btn = document.querySelectorAll('.modal_one_btn');
@@ -89,6 +90,7 @@ const menu = document.querySelector('.menu-modal');
 const menuClose = document.querySelector('.menu-modal__close');
 const menuBg = document.querySelector('.menu-modal__bg');
 const menuOpen = document.querySelector('.header .bars');
+const menuLinks = document.querySelectorAll('.menu-modal li a');
 
 menuOpen.onclick = () => {
     menu.classList.add('active');
@@ -104,3 +106,10 @@ menuBg.onclick = () => {
     menu.classList.remove('active');
     bodyVisible();
 }
+
+menuLinks.forEach(el => {
+    el.onclick = () => {
+        menu.classList.remove('active');
+        bodyVisible();
+    }
+})

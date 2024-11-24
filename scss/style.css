@@ -736,6 +736,10 @@ textarea {
   right: 350px;
   top: 131px;
   z-index: 2;
+  transition: 0.2s ease all;
+}
+.home__bg_content .play-icon:hover {
+  filter: grayscale(20%) brightness(100%);
 }
 @media screen and (max-width: 992px) {
   .home__bg_content .play-icon {
@@ -1737,6 +1741,12 @@ textarea {
     height: 88px;
   }
 }
+.contact-form__right .network:hover img {
+  transition: 0.2s ease all;
+}
+.contact-form__right .network:hover img:hover {
+  filter: grayscale(20%) brightness(100%);
+}
 
 .direction {
   margin-bottom: 100px;
@@ -1787,9 +1797,9 @@ textarea {
 }
 .direction__content_swp {
   width: calc(100% - 410px);
-  padding-left: 151px;
   overflow: hidden;
   border-radius: 10px;
+  position: relative;
 }
 @media screen and (max-width: 993px) {
   .direction__content_swp {
@@ -1799,9 +1809,28 @@ textarea {
     overflow: visible;
   }
 }
+.direction__content_swp .swp_btn {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  z-index: 2;
+  background: #FFF;
+  padding: 12px 15px 0;
+  border-radius: 15px 15px 0 0;
+}
+@media screen and (max-width: 992px) {
+  .direction__content_swp .swp_btn {
+    background: #d8d9e0;
+  }
+}
 .direction__content_swp .swiper {
   width: 307px;
-  margin: 0;
+  margin: 0 auto;
   overflow: visible;
 }
 @media screen and (max-width: 992px) {
@@ -1813,19 +1842,15 @@ textarea {
 .direction__content_swp .swiper-slide {
   width: 100%;
   border-radius: 10px;
-  overflow: hidden;
   height: 459px;
+  transition: 0.2s ease all;
 }
 .direction__content_swp .swiper-slide img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-@media screen and (min-width: 992px) {
-  .direction__content_swp .swiper-slide:not(.swiper-slide-active) {
-    width: 136px !important;
-  }
+  border-radius: 10px;
 }
 .direction__content_swp .swiper-slide-active {
   display: flex;
@@ -1833,7 +1858,6 @@ textarea {
   justify-content: space-between;
 }
 .direction__content_swp .swiper-slide-active img {
-  height: 388px;
   border-radius: 10px;
 }
 .direction__content_swp .swiper-slide .swp_btn {
@@ -1849,6 +1873,13 @@ textarea {
   .direction__content_right {
     width: 100%;
   }
+}
+.direction__content_right .swiper {
+  overflow: visible;
+}
+.direction__content_right .swiper-slide:not(.swiper-slide-active) {
+  height: 0;
+  overflow: hidden;
 }
 .direction__content_right h3 {
   font-size: 22px;
