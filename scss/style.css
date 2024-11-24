@@ -1829,7 +1829,7 @@ textarea {
   }
 }
 .direction__content_swp .swiper {
-  width: 307px;
+  width: 480px;
   margin: 0 auto;
   overflow: visible;
 }
@@ -1857,11 +1857,6 @@ textarea {
      object-fit: cover;
   border-radius: 10px;
   transition: 0.2s ease all;
-}
-@media screen and (min-width: 992px) {
-  .direction__content_swp .swiper-slide:not(.swiper-slide-active) img {
-    transform: scale(0.7);
-  }
 }
 .direction__content_swp .swiper-slide-active {
   display: flex;

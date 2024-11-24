@@ -16,7 +16,7 @@ const directionSwp = new Swiper('.direction .direction__content_swp .swiper', {
     effect: "coverflow",
     centeredSlides: true,
     slidesPerView: "auto",
-    spaceBetween: -30,
+    spaceBetween: -10,
     loop: true,
     navigation: {
         nextEl: '.direction .swp_btn__next',

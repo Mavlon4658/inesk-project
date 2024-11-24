@@ -1871,7 +1871,7 @@ textarea {
       }
 
       .swiper {
-        width: 307px;
+        width: 480px;
         margin: 0 auto;
         overflow: visible;
 
@@ -1903,7 +1903,7 @@ textarea {
           @include media(-992) {
               &:not(.swiper-slide-active) {
                 img {
-                  transform: scale(.7);
+                  // transform: scale(.7);
                 }
               }
           }
