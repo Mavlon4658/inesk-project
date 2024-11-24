@@ -1885,17 +1885,26 @@ textarea {
           border-radius: 10px;
           height: 459px;
           transition: .2s ease all;
+          background: transparent;
+
+          .swiper-slide-shadow-right,
+          .swiper-slide-shadow-left {
+            background: transparent;
+          }
 
           img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             border-radius: 10px;
+            transition: .2s ease all;
           }
 
           @include media(-992) {
               &:not(.swiper-slide-active) {
-                // transform: scaleX(.5);
+                img {
+                  transform: scale(.7);
+                }
               }
           }
 

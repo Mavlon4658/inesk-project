@@ -16,7 +16,7 @@ const directionSwp = new Swiper('.direction .direction__content_swp .swiper', {
     effect: "coverflow",
     centeredSlides: true,
     slidesPerView: "auto",
-    spaceBetween: -10,
+    spaceBetween: -30,
     loop: true,
     navigation: {
         nextEl: '.direction .swp_btn__next',
@@ -25,6 +25,18 @@ const directionSwp = new Swiper('.direction .direction__content_swp .swiper', {
     thumbs: {
         swiper: directionContentSwp,
     },
+})
+
+document.querySelectorAll('.direction .direction__content_swp .swiper-slide').forEach((el, elID) => {
+    el.onclick = () => {
+        if (el.classList.contains('swiper-slide-next')) {
+            directionSwp.slideNext();
+        }
+
+        if (el.classList.contains('swiper-slide-prev')) {
+            directionSwp.slidePrev();
+        }
+    }
 })
 
 let modal_one_btn = document.querySelectorAll('.modal_one_btn');

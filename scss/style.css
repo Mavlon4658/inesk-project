@@ -1844,6 +1844,11 @@ textarea {
   border-radius: 10px;
   height: 459px;
   transition: 0.2s ease all;
+  background: transparent;
+}
+.direction__content_swp .swiper-slide .swiper-slide-shadow-right,
+.direction__content_swp .swiper-slide .swiper-slide-shadow-left {
+  background: transparent;
 }
 .direction__content_swp .swiper-slide img {
   width: 100%;
@@ -1851,6 +1856,12 @@ textarea {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
+  transition: 0.2s ease all;
+}
+@media screen and (min-width: 992px) {
+  .direction__content_swp .swiper-slide:not(.swiper-slide-active) img {
+    transform: scale(0.7);
+  }
 }
 .direction__content_swp .swiper-slide-active {
   display: flex;
