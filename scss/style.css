@@ -475,6 +475,82 @@ textarea {
   display: flex;
 }
 
+.modal_end {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #D8D9E0;
+  border-radius: 20px;
+  padding: 32px 47px 27px 47px;
+  z-index: 5;
+  width: 425px;
+}
+.modal_end a {
+  display: block;
+  position: relative;
+  flex-shrink: 0;
+  padding: 33px 35px;
+  margin: 0 auto;
+  z-index: 1;
+  font-size: 18px;
+  line-height: 130%;
+  font-weight: 600;
+  color: #FFF;
+  text-align: center;
+}
+.modal_end a::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 11px;
+  bottom: -5px;
+  width: calc(100% - 22px);
+  height: 18.5px;
+  background: #27a7e7;
+  border-radius: 5px;
+  filter: blur(7px);
+}
+.modal_end a::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background: linear-gradient(to right, #27a7e7, #4dc1ef, #27a7e7);
+  box-shadow: 0 4px 2px #207fb1;
+  transition: 0.2s ease all;
+}
+.modal_end a:hover::after {
+  background: linear-gradient(to right, #27a7e7, #1f88b4, #27a7e7);
+  box-shadow: 0 4px 2px #145e80;
+}
+.modal_end h3 {
+  font-family: "GetVoIP Grotesque", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  color: #292929;
+  margin-bottom: 24px;
+}
+.modal_end p {
+  margin-top: 30px;
+  font-family: "Mont", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 16.18px;
+  color: #999999;
+}
+
+.modal_end.active {
+  display: block;
+}
+
 .header {
   position: absolute;
   top: 0;

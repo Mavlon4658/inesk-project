@@ -39,6 +39,20 @@ document.querySelectorAll('.direction .direction__content_swp .swiper-slide').fo
     }
 })
 
+let form_submit = document.querySelector('.form_submit');
+let modal_end = document.querySelector('.modal_end');
+let form = document.querySelector('form');
+
+form_submit.addEventListener('click', (event) => {
+    event.preventDefault();
+    modal_one.style.display = 'none';
+
+    setTimeout(() => {
+        modal_end.classList.add('active')
+    }, 200);
+});
+
+
 let modal_one_btn = document.querySelectorAll('.modal_one_btn');
 let modal_two_btn = document.querySelectorAll('.modal_two_btn');
 let modal_one = document.querySelector('.modal_one');
@@ -73,6 +87,7 @@ modal_bg.addEventListener('click', () => {
     modal_one.classList.remove('active');
     modal_two.classList.remove('active');
     modal_bg.classList.remove('active');
+    modal_end.classList.remove('active');
     bodyVisible();
 })
 

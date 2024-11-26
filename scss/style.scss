@@ -78,12 +78,12 @@ textarea {
         box-shadow: 0 4px 2px #B02A2F;
         transition: .2s ease all;
       }
-      
+
       &:hover {
         &::after {
         background: linear-gradient(to right, #f74248, #a12b2f, #f8454b);
       }
-    }
+      }
     }
 }
 
@@ -97,7 +97,7 @@ textarea {
     align-items: center;
     justify-content: center;
     transition: .2s ease all;
-    
+
     &:hover {
       background: #ab0d12;
     }
@@ -423,7 +423,93 @@ textarea {
 }
 // modal_two
 
-// Header 
+// modal_end
+.modal_end {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #D8D9E0;
+  border-radius: 20px;
+  padding: 32px 47px 27px 47px;
+  z-index: 5;
+  width: 425px;
+
+  a {
+    display: block;
+    position: relative;
+    flex-shrink: 0;
+    padding: 33px 35px;
+    margin: 0 auto;
+    z-index: 1;
+    font-size: 18px;
+    line-height: 130%;
+    font-weight: 600;
+    color: #FFF;
+    text-align: center;
+
+    &::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 11px;
+        bottom: -5px;
+        width: calc(100% - 22px);
+        height: 18.5px;
+        background: #27a7e7;
+        border-radius: 5px;
+        filter: blur(7px);
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        background: linear-gradient(to right, #27a7e7, #4dc1ef, #27a7e7);
+        box-shadow: 0 4px 2px #207fb1;
+        transition: .2s ease all;
+      }
+
+      &:hover {
+        &::after {
+          background: linear-gradient(to right, #27a7e7, #1f88b4, #27a7e7);
+          box-shadow: 0 4px 2px #145e80;
+      }
+    }
+  }
+
+  h3 {
+    font-family: $font-getvoip;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    color: #292929;
+    margin-bottom: 24px;
+  }
+
+  p {
+    margin-top: 30px;
+    font-family: $font-mont;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 16.18px;
+    color: #999999;
+}
+}
+
+.modal_end.active {
+  display: block;
+}
+// modal_end
+
+// Header
 .header {
     position: absolute;
     top: 0;
@@ -605,7 +691,7 @@ textarea {
         @include media(1112) {
             width: calc(100% - 90px);
         }
-        
+
         &_in {
             background: #FFF;
             position: relative;
@@ -695,7 +781,7 @@ textarea {
           @include media(420) {
             height: 820px;
           }
-          
+
           .play-icon {
             position: absolute;
             right: 350px;
@@ -961,7 +1047,7 @@ textarea {
 
             &:first-child, &:last-child {
                 position: relative;
-                
+
                 @include media(-992) {
                     transform: translateY(-42px);
                 }
@@ -1049,7 +1135,7 @@ textarea {
         margin-bottom: 15px;
         -webkit-text-stroke: 2px #FFF;
         // -webkit-text-fill-color: transparent;
-        
+
         span {
           -webkit-text-stroke: 0px #FFF;
         }
@@ -1130,7 +1216,7 @@ textarea {
             @include media(992) {
                 width: 100%;
             }
-            
+
             .swiper {
                 &-slide {
                     border-radius: 20px;
@@ -1230,7 +1316,7 @@ textarea {
         top: -60px;
 
     }
-    
+
     .swp_btn_wrap {
         position: relative;
 
@@ -1343,7 +1429,7 @@ textarea {
             @include media(-992) {
                 display: none;
             }
-            
+
             span {
                 position: absolute;
                 right: 0;
@@ -1803,11 +1889,11 @@ textarea {
     text-align: center;
     text-transform: uppercase;
     -webkit-text-stroke: 2px #FFF;
-    
+
     span {
       -webkit-text-stroke: 0px #FFF;
     }
-    
+
     @include media(993) {
       font-size: 24px;
       line-height: 28px;
