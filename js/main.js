@@ -47,6 +47,8 @@ form_submit_buttons.forEach((button) => {
         event.preventDefault();
         modal_one.classList.remove('active');
         modal_two.classList.remove('active');
+        modal_bg.classList.add('active');
+
 
         setTimeout(() => {
             modal_end.classList.add('active');
